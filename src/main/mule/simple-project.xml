@@ -5,10 +5,10 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ba7c19af-1b6b-44f6-a820-5abc297800d1" >
-		<http:listener-connection host="0.0.0.0" port="8066" />
+		<http:listener-connection host="0.0.0.0" port="8077" />
 	</http:listener-config>
 	<flow name="simple-projectFlow" doc:id="806f45b1-116c-444c-91ac-01da1f386be9" >
-		<http:listener doc:name="Listener" doc:id="4611a2d1-1cea-4d53-91fa-839a5e3173c2" config-ref="HTTP_Listener_config" path="/project82"/>
+		<http:listener doc:name="Listener" doc:id="4611a2d1-1cea-4d53-91fa-839a5e3173c2" config-ref="HTTP_Listener_config" path="/project66"/>
 		<logger level="INFO" doc:name="Mefti82" doc:id="ccfc8093-a2c5-4662-bb4e-ccd17d4fe529" message="Mefti82"/>
 		<set-payload value="Hello Mefti" doc:name="Set Payload" doc:id="ebf404b8-d1ec-46d9-bb34-7f9c0962d332" />
 	</flow>
